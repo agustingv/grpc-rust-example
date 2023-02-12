@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  grpc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: grpc
+    volumes:
+      - ./:/app
